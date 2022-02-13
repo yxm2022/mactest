@@ -1,0 +1,92 @@
+/* <!-- 样式模块化 --> */
+/* 
+    @规则 
+    @charset  设置样式表的编码  eg： @charset ‘utf-8’
+    @import   导入其他样式文件  即 样式模块化，这样的好处就是大项目集体合作好使 eg:  @import 'reset.css';
+              比如，某一个模块一样，可以服用，那就可以提取，head.css, 这样就可以复用
+    
+    @meida    媒体查询  即 移动端的开发，手机的屏幕尺寸，适配，通过@meida 查询屏幕宽度，还可以查设备，
+    @font-face 自定义字体  即 宋体雅黑电脑都有，如果是方正雅黑，用户电脑没有，就需要去下载
+
+*/
+
+@import 'reset.css';
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('../font/iconfont.ttf?t=1644548481414') format('truetype');
+  }
+
+  .iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .icon-gouwucheman:before {
+    content: "\f0178";
+  }
+  
+  .icon-taogongzi:before {
+    content: "\35ba";
+  }
+  
+  .icon-erweima:before {
+    content: "\e65f";
+  }
+  
+  .icon-arrow-left:before {
+    content: "\e645";
+  }
+  
+  .icon-sousuo:before {
+    content: "\e651";
+  }
+  
+  .icon-xiangxiajiantou:before {
+    content: "\e65e";
+  }
+  
+  .icon-youjiantou:before {
+    content: "\e658";
+  }
+  
+  .icon-caidan:before {
+    content: "\eaf1";
+  }
+  
+  .icon-guanbi:before {
+    content: "\eaf2";
+  }
+  
+  .icon-right-s:before {
+    content: "\e627";
+  }
+  
+  .icon-paizhao:before {
+    content: "\e519";
+  }
+  
+  .icon-quotation:before {
+    content: "\e61d";
+  }
+  
+  .icon-xiaolian:before {
+    content: "\e688";
+  }
+  
+  .icon-star-full:before {
+    content: "\e9a1";
+  }
+
+
+  /* 头部信息 */
+  #headMessage li{
+      float: left;
+      line-height: 35px;
+      padding: 0 6px;
+
+  }
+  
